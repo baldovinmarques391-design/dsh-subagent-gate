@@ -1,0 +1,55 @@
+{
+  "name": "@local/dsh-subagent-gate",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "原生子代理总开关：关掉后关于子代理的提示词整块消失、插件页里的「子智能体」卡片也不再显示。",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "^3.18.2"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/schemastery": {
+      "optional": false
+    }
+  },
+  "meta": {
+    "title": "子代理开关",
+    "description": "关掉后关于子代理的提示词整块消失，「子智能体」卡片也不再显示；打开后卡片回来，提示词只在会话里确实有子代理时才注入。"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings-general"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "subagent"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baldovinmarques391-design/dsh-subagent-gate.git"
+  }
+}

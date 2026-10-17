@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Subagent switch",
+    "description": "Off: the subagent prompt text and the Subagent card both disappear. On: the card returns, and the prompt is injected only for sessions that really have subagents."
+  }
+}

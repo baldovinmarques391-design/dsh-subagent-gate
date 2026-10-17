@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-label="Subagent switch">
+  <!-- No backing plate; the shape of the shipped switch, filling the box. -->
+  <rect x="1.4" y="6.6" width="21.2" height="10.8" rx="5.4" fill="#1f2328"/>
+  <circle cx="17.3" cy="12" r="3.9" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,8 @@
+- insert:
+    - id: subagent-gate
+      name: '@local/dsh-subagent-gate'
+      config:
+        enabled: true
+        hiddenRows:
+          - ui-settings-subagent
+          - ui-subagent
